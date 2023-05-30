@@ -1,6 +1,5 @@
 .create_post_container {
   width: 700px;
-
   margin-top: 10px;
   background: #27292d;
   border: 2px solid #35373b;
@@ -13,7 +12,8 @@
 .welcome_container {
   width: 700px;
   margin-top: 10px;
-
+  height: 100px;
+  margin-top: 50px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
@@ -26,6 +26,38 @@
   font-size: 28px;
   line-height: 34px;
   /* identical to box height */
+
+  color: #c5c7ca;
+}
+.welcome_container > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+  color: #7f8084;
+}
+.profile_info {
+  display: flex;
+  height: 58px;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+.profile_info > p {
+  height: 42px;
+  width: 42px;
+  border-radius: 100%;
+  background-color: #4a96ff;
+}
+.profile_username {
+  margin-left: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
 
   color: #c5c7ca;
 }
@@ -46,13 +78,12 @@
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 .create_post_input {
   background: #191920;
   border: none;
-  margin-left: 10px;
+  margin-left: 20px;
   width: 300px;
   color: #c5c7ca;
 }
@@ -66,6 +97,7 @@ input:focus {
   display: flex;
   justify-content: end;
   margin-top: 10px;
+  height: 45px;
 }
 .post_btn {
   width: 111px;

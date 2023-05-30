@@ -5,7 +5,7 @@ const Signin = ({ handleChange }) => {
         <>
             <section >
                 <div class="flex flex-col items-center justify-center px-6 py-1 mx-auto lg:py-0">
-                    <div class="w-full  rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0">
+                    <div class="w-full  rounded-lg md:mt-0 sm:max-w-md xl:p-0">
                         <div class="">
                             <p className='text-[#6B6C70] text-center  font-inter font-medium text-base' >Welcome back</p>
                             <p class="text-white text-center  font-inter font-medium text-base">

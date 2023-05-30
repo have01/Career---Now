@@ -1,12 +1,15 @@
 import React, { useState } from 'react'
 import "../style/createpost.css"
 import Modal from './Modal'
+import Posts from './posts'
 const CreatePost = () => {
     const [showModal, setShowModal] = useState(false); //toggle modal 
     return (
         <>
             <div className='welcome_container'>
                 <h1>Hello Jane</h1>
+                <p> How are you doing today? Would you like to share something with the
+                    <br /> community 🤗</p>
             </div>
             <div className='create_post_container'>
                 <p className='create_post_heding'>Create Post</p>
@@ -19,13 +22,7 @@ const CreatePost = () => {
                 </div>
 
             </div>
-            <div className='create_post_container'>
-                <p className='create_post_heding'>Create Post</p>
-                <div className="create_post ">
-                    <p style={{ color: "white" }}>🗯</p>
-                    <p className='posts'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sunt consequuntur repellat tempora veritatis, odit, soluta culpa qui laboriosam reiciendis consequatur a illo beatae et quos. Magnam, ipsum. Nobis, culpa?</p>
-                </div>
-            </div>
+            <Posts />
             <Modal showModal={showModal} setShowModal={setShowModal} />
         </>
 
