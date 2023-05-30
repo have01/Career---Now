@@ -1,7 +1,11 @@
-import React, { memo } from 'react'
-
+import React, { memo, useState } from 'react'
+import Signin from './Signin'
+import Signup from './Signup'
 const Modal = ({ setShowModal, showModal }) => {
-
+    const [form, setform] = useState(true)
+    const handleChange = () => {
+        setform(!form)
+    }
     return (
         <>
             {showModal ? (
@@ -11,25 +15,24 @@ const Modal = ({ setShowModal, showModal }) => {
                     >
                         <div className="relative w-auto my-1 mx-auto max-w-3xl ">
                             {/*content*/}
-                            <div className="border-0 rounded-lg shadow-lg w-[90vw] sm:w-[310px] h-[200px] relative flex flex-col  bg-white outline-none focus:outline-none  ">
+                            <div className={` border-0 rounded-lg shadow-lg w-[90vw] sm:w-[463px]  ${form ? 'h-[500px]' : 'h-[420px]'} relative flex flex-col  bg-[#27292D] outline-none focus:outline-none `}>
                                 {/*header*/}
                                 <div className="flex items-start justify-between p-1 rounded-t">
                                     <button
-                                        className="p-1 ml-auto  border-0 text-white  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                                        className="rounded-full flex justify-center items-center ml-auto  border-0 text-white bg-[#131319] h-[32px] w-[32px]  float-right  leading-none font-semibold outline-none focus:outline-none"
                                         onClick={() => {
                                             setShowModal(false)
 
                                         }}
                                     >
-                                        <span className=" text-black  h-6 w-6 text-xl block">
+                                        <span className="text-white text-xl block">
                                             x
                                         </span>
                                     </button>
                                 </div>
                                 {/*body*/}
                                 <div className="relative p-6 flex flex-col items-center justify-center  ">
-
-
+                                    {form ? <Signup handleChange={handleChange} /> : <Signin handleChange={handleChange} />}
                                 </div>
 
                             </div>
