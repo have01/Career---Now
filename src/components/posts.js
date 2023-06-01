@@ -12,7 +12,7 @@ const posts = () => {
                     </div>
                 </div>
                 <div className="create_post ">
-                    <p style={{ color: "white", padding: "10px" }}>👋</p>
+                    <p className='post_status_emoji'>👋</p>
                     <p className='posts'> Lorem ipsupisicing elit. Velit suntur repellat tdit, soluta culpa qui laboriosam reiciendis consequatur a illo beatae et quos. Magnam, ipsum. Nobis, culpa?</p>
                 </div>
             </div>
@@ -25,7 +25,7 @@ const posts = () => {
                     </div>
                 </div>
                 <div className="create_post ">
-                    <p style={{ color: "white", padding: "10px" }}>😞</p>
+                    <p className="post_status_emoji">😞</p>
                     <p className='posts'> Lorem ipsupisicing elit. Velit suntur repellat tdit, soluta culpa qui laboriosam reiciendis consequatur a illo beatae et quos. Magnam, ipsum. Nobis, culpa?</p>
                 </div>
             </div>

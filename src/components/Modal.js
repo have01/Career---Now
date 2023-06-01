@@ -10,28 +10,30 @@ const Modal = ({ setShowModal, showModal }) => {
         <>
             {showModal ? (
                 <>
+
                     <div
-                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none   bg-opacity-50"
+                        className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none  border-2 border-yellow-900  bg-opacity-50"
                     >
-                        <div className="relative w-auto my-1 mx-auto max-w-3xl ">
+                        <div className="relative w-auto my-1 mx-auto max-w-3xl border-2 border-yellow-900 ">
                             {/*content*/}
-                            <div className={` border-0 rounded-lg shadow-lg w-[90vw] sm:w-[463px]  ${form ? 'h-[500px]' : 'h-[420px]'} relative flex flex-col  bg-[#27292D] outline-none focus:outline-none `}>
+                            <div className={`  rounded-lg shadow-lg w-[90vw] sm:w-[463px]  ${form ? 'h-[500px]' : 'h-[420px]'} relative flex flex-col  bg-[#27292D]  `} style={{
+                                border: "2px solid #C5C7CA"
+                            }}>
                                 {/*header*/}
                                 <div className="flex items-start justify-between p-1 rounded-t">
                                     <button
-                                        className="rounded-full flex justify-center items-center ml-auto  border-0 text-white bg-[#131319] h-[32px] w-[32px]  float-right  leading-none font-semibold outline-none focus:outline-none"
+                                        className="rounded-full flex justify-center items-center ml-auto  mt-2 mr-3 border-0 text-white bg-[#131319] h-[24px] w-[24px]  float-right  leading-none font-semibold outline-none focus:outline-none"
                                         onClick={() => {
                                             setShowModal(false)
 
                                         }}
                                     >
-                                        <span className="text-white text-xl block">
-                                            x
-                                        </span>
+                                        x
+
                                     </button>
                                 </div>
                                 {/*body*/}
-                                <div className="relative p-6 flex flex-col items-center justify-center  ">
+                                <div className="relative  flex flex-col items-center justify-center  ">
                                     {form ? <Signup handleChange={handleChange} /> : <Signin handleChange={handleChange} />}
                                 </div>
 
