@@ -31,6 +31,7 @@ const Posts = () => {
                             <p className="post_status_emoji">{val.emoji}</p>
                             <p className='posts'> Lorem ipsupisicing elit. Velit suntur repellat tdit, soluta culpa qui laboriosam reiciendis consequatur a illo beatae et quos. Magnam, ipsum. Nobis, culpa?</p>
                         </div>
+                        <div className='comments'><p>✉ 24 comments</p> </div>
                     </div>
                 )
             })}

@@ -118,6 +118,14 @@ input:focus {
   margin-top: 10px;
   height: 45px;
 }
+.comments {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f8084;
+  margin-top: 4px;
+}
 .post_btn {
   width: 111px;
   height: 43px;
