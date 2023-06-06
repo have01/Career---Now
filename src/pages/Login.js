@@ -1,10 +1,11 @@
 import React from 'react'
 import Signin from '../components/Signin'
-
+import Logo from "../assests/Logo.png"
 const Login = () => {
     return (
-        <div className='bg-[#131319] w-[100vw] h-screen flex items-center justify-center'>
-            <section >
+        <div className='bg-[#131319] w-[100vw] h-screen flex items-center justify-center flex-col'>
+            <img src={Logo} alt="" srcset="" />
+            <section className='mt-5' >
                 <div class="flex flex-col items-center justify-center px-6 py-1 mx-auto lg:py-0 w-[463px] h-[420px] bg-[#27292D]">
                     <div class="w-full  rounded-lg md:mt-0 sm:max-w-md xl:p-0">
                         <div class="">

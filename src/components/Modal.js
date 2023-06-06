@@ -16,8 +16,8 @@ const Modal = ({ setShowModal, showModal }) => {
                     >
                         <div className="relative w-auto my-1 mx-auto max-w-3xl border-2 border-yellow-900 ">
                             {/*content*/}
-                            <div className={`  rounded-lg shadow-lg w-[90vw] sm:w-[463px]  ${form ? 'h-[500px]' : 'h-[420px]'} relative flex flex-col  bg-[#27292D]  `} style={{
-                                border: "2px solid #C5C7CA"
+                            <div className={`  rounded-lg shadow-lg w-[90vw] sm:w-[463px]  border-t-2 ${form ? 'h-[500px]' : 'h-[420px]'} relative flex flex-col  bg-[#27292D]  `} style={{
+                                borderTop: "1px solid #C5C7CA", borderLeft: "1px solid #C5C7CA", borderBottom: "1px solid #C5C7CA", borderBottomWidth: "50%"
                             }}>
                                 {/*header*/}
                                 <div className="flex items-start justify-between p-1 rounded-t">
